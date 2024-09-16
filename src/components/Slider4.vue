@@ -1,34 +1,47 @@
 <template>
   <section>
     <div class="p-4 md:p-8 lg:p-16 bg-gray-100">
-      <swiper :pagination="true" :modules="modules" class="mySwiper">
+      <swiper
+        :modules="[Pagination]"
+        :space-between="30"
+        :pagination="{ clickable: true }"
+        :breakpoints="{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }"
+        class="swiper"
+      >
         <swiper-slide>
-          <New />
+          <Card />
         </swiper-slide>
         <swiper-slide>
-          <New />
+          <Card />
         </swiper-slide>
         <swiper-slide>
-          <New />
+          <Card />
         </swiper-slide>
         <swiper-slide>
-          <New />
+          <Card />
         </swiper-slide>
         <swiper-slide>
-          <New />
-        </swiper-slide>
-        <swiper-slide>
-          <New />
+          <Card />
         </swiper-slide>
       </swiper>
     </div>
   </section>
 </template>
+
 <script setup>
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
-import New from "./News.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import Card from "./Cards.vue";
 </script>
 
 <style scoped>
@@ -38,9 +51,11 @@ import New from "./News.vue";
 }
 
 .swiper-slide {
+  /* height: 250px; */
   text-align: center;
   font-size: 18px;
   background: #fff;
+  border-radius: 10px;
 
   /* Center slide text vertically */
   display: flex;
