@@ -1,7 +1,8 @@
 <template>
   <section>
-    <div class="p-4 md:p-8 lg:p-16 bg-gray-100 w-full flex flex-row bg-white">
-      <div class="w-1/2 flex flex-col justify-center space-y-6">
+    <div class="p-4 md:p-8 lg:p-16 bg-gray-100 w-full flex flex-col md:flex-row bg-white">
+      <!-- Text Section -->
+      <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6 mb-4 md:mb-0">
         <h2 class="text-2xl font-bold text-gray-800">This is a heading information</h2>
         <p class="text-body1 text-medium text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore, suscipit vitae quaerat eum, vel corporis doloremque ullam quod nulla nobis provident. Eligendi, saepe natus dolorum maiores magni commodi accusantium?
@@ -10,7 +11,9 @@
           Know More
         </button>
       </div>
-      <div class="w-1/2">
+
+      <!-- Swiper Section -->
+      <div class="w-full md:w-1/2">
         <swiper
           :modules="[Pagination]"
           :pagination="{ clickable: true }"
