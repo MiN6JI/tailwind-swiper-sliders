@@ -11,7 +11,7 @@
 .img-card{
     width: 100%;
     height: 100%;
-    background-image: url('https://picsum.photos/seed/picsum/300/500/?blur');
+    background-image: url('https://picsum.photos/1980/2400/?blur/?random=3');
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
