@@ -7,6 +7,8 @@
   <Slider6 />
   <Layout1 />
   <Layout2 />
+  <Layout3 />
+  <Layout4 />
 </template>
 <script setup>
 import Slider1 from './components/Slider1.vue'
@@ -17,6 +19,8 @@ import Slider5 from './components/Slider5.vue'
 import Slider6 from './components/Slider6.vue'
 import Layout1 from './components/layout1.vue'
 import Layout2 from './components/layout2.vue'
+import Layout3 from './components/layout3.vue'
+import Layout4 from './components/layout4.vue'
 import Testimonial from './components/testimonial.vue'
 import New from './components/News.vue'
 </script>
