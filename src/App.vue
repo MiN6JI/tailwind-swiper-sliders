@@ -9,6 +9,8 @@
   <Layout2 />
   <Layout3 />
   <Layout4 />
+  <Layout5 />
+  <!-- <BlogCard /> -->
 </template>
 <script setup>
 import Slider1 from './components/Slider1.vue'
@@ -23,4 +25,6 @@ import Layout3 from './components/layout3.vue'
 import Layout4 from './components/layout4.vue'
 import Testimonial from './components/testimonial.vue'
 import New from './components/News.vue'
+import BlogCard from './components/blogCard.vue'
+import Layout5 from './components/layout5.vue'
 </script>
