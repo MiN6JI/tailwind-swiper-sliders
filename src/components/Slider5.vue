@@ -1,7 +1,6 @@
 <template>
   <section>
-    <div class="p-4 md:p-8 lg:p-16 bg-gray-100 w-full flex flex-col md:flex-row bg-white">
-      <!-- Text Section -->
+    <div class="p-4 md:p-8 lg:p-16 bg-gray-100 w-full flex flex-col md:flex-row ">
       <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6 mb-4 md:mb-0">
         <h2 class="text-2xl font-bold text-gray-800">This is a heading information</h2>
         <p class="text-body1 text-medium text-gray-400">

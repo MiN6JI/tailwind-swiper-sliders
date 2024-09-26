@@ -1,22 +1,23 @@
 <template>
-    <div class="w-full flex flex-row">
-        <div class="w-2/5">
-            <div class="border-r flex flex-row justify-around items-stretch">
-                <img :src="imageUrl" alt="blog image" class="blog-img rounded-md">
-                <div class="flex flex-col justify-center items-center">
-                    <h1 class="text-4xl font-extrabold">{{ day }}</h1>
-                    <p class="font-medium text-xl text-gray-600">{{ month }}</p>
-                </div>
-            </div>
+    <div class="w-full flex flex-col md:flex-row">
+      <div class="md:w-2/5">
+        <div class="border-r flex flex-col md:flex-row justify-around items-center md:items-stretch p-4">
+          <img :src="imageUrl" alt="blog image" class="blog-img rounded-md">
+          <div class="flex flex-col justify-center items-center mt-4 md:mt-0">
+            <h1 class="text-4xl font-extrabold">{{ day }}</h1>
+            <p class="font-medium text-xl text-gray-600">{{ month }}</p>
+          </div>
         </div>
-        <div class="w-3/5 py-4 px-8 flex flex-row space-x-4 justify-center items-center">
-            <div class="text-2xl font-medium">{{ description }}</div>
-            <router-link :to="link">
-                <img src="../assets/next.png" alt="next" width="50">
-            </router-link>
-        </div>
+      </div>
+      <div class="md:w-3/5 py-4 px-4 md:px-8 flex flex-col md:flex-row space-x-4 justify-center items-center">
+        <div class="text-2xl font-medium text-center md:text-left">{{ description }}</div>
+        <router-link :to="link" class="py-4 md:py-0">
+          <img src="../assets/next.png" alt="next" class="w-8 md:w-16">
+        </router-link>
+      </div>
     </div>
-</template>
+  </template>
+  
 
 <script setup>
 import { defineProps } from 'vue';
