@@ -1,46 +1,39 @@
 <template>
-  <div class="grid grid-cols-2 grid-rows-2 gap-4 p-4">
-    <div class="col-span-2 row-span-1 bg-cover bg-center relative h-64" :style="{ backgroundImage: `url('${item1.image}')` }">
-      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-4">
-        <h2 class="text-white text-xl font-bold">{{ item1.title }}</h2>
-        <p class="text-white">{{ item1.subtext }}</p>
+  <section class="py-8 px-4 flex flex-col justify-center items-center">
+    <div class="flex flex-col md:flex-row w-full md:w-3/5 text-white">
+      <div
+        class="flex-1 bg-teal-400 flex flex-col justify-center items-start space-y-10 p-8"
+      >
+        <div>
+          <p>Our Work</p>
+          <h3 class="text-3xl font-bold">Design Skills</h3>
+        </div>
+        <div>
+          <img
+            src="../assets/plus-simple.png"
+            alt="new-plus"
+            width="30"
+            class="border p-2"
+          />
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-blue-500 flex flex-col justify-center items-start space-y-10 p-8">
+        <div>
+          <p>Our Work</p>
+          <h3 class="text-3xl font-bold">Let's Work</h3>
+        </div>
+        <div>
+          <img
+            src="../assets/plus-simple.png"
+            alt="new-plus"
+            width="30"
+            class="border p-2"
+          />
+        </div>
       </div>
     </div>
-    <div class="col-span-1 row-span-1 bg-cover bg-center relative h-64" :style="{ backgroundImage: `url('${item2.image}')` }">
-      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-4">
-        <h2 class="text-white text-xl font-bold">{{ item2.title }}</h2>
-        <p class="text-white">{{ item2.subtext }}</p>
-      </div>
-    </div>
-    <div class="col-span-1 row-span-1 bg-cover bg-center relative h-64" :style="{ backgroundImage: `url('${item3.image}')` }">
-      <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-4">
-        <h2 class="text-white text-xl font-bold">{{ item3.title }}</h2>
-        <p class="text-white">{{ item3.subtext }}</p>
-      </div>
-    </div>
-  </div>
+  </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      item1: {
-        image: 'https://via.placeholder.com/400',
-        title: 'Item 1',
-        subtext: 'Description for item 1',
-      },
-      item2: {
-        image: 'https://via.placeholder.com/400',
-        title: 'Item 2',
-        subtext: 'Description for item 2',
-      },
-      item3: {
-        image: 'https://via.placeholder.com/400',
-        title: 'Item 3',
-        subtext: 'Description for item 3',
-      },
-    };
-  },
-};
-</script>
+<script setup></script>

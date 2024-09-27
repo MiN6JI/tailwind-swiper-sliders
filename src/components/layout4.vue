@@ -3,7 +3,7 @@
       class="bg-img h-screen bg-cover bg-center text-white p-10 flex flex-col justify-between"
     >
       <!-- Heading -->
-      <h1 class="text-4xl md:text-6xl font-bold text-center mb-8">Biography</h1>
+      <h1 class="text-4xl md:text-6xl font-bold text-center mb-8">Adventure</h1>
   
       <!-- Responsive 3-column layout -->
       <div class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto">
