@@ -5,7 +5,7 @@
                 <h3 class="text-2xl font-bold py-3">All your credentials in one place</h3>
                 <p v-if="!buttonClicked">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, doloribus quasi asperiores rerum architecto cum adipisci mollitia ipsam eaque beatae!</p>
                 <p v-if="buttonClicked" class="appear">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam obcaecati ullam deserunt rerum natus culpa eaque eligendi? Quod tenetur expedita deserunt officiis, rerum ad veniam placeat vitae! Facere odit illum eos excepturi in mollitia? Sed laboriosam nobis harum, quae aperiam reiciendis alias, aspernatur mollitia expedita quis corrupti, quas natus nemo provident odio. Cum neque accusamus doloremque harum nisi! Odio esse sint quidem? Explicabo, facilis nostrum in amet maiores asperiores qui labore? Odit quae aspernatur, debitis accusamus tenetur possimus nam repellat mollitia officiis magni soluta numquam? Ab fugiat architecto dolorem mollitia ipsa, harum temporibus praesentium maxime quidem nesciunt esse quod reprehenderit.</p>
-                <img v-if="!buttonClicked" src="../assets/original-f8e8b14fc45fcda1c783f3331f9087db.png" alt="Image" class="my-8 rounded-lg w-full h-auto">
+                <img v-if="!buttonClicked" src="../assets/dashboard-1.png" alt="Image" class="my-12 rounded-lg w-full h-auto">
             </div>
             <div>
                 <div class="p-2">
@@ -38,7 +38,8 @@ function getCardClasses() {
 
 <style scoped>
 .card {
-    min-height: 100vh;
+    height: 550px;
+    max-height: 100vh;
     background: linear-gradient(90deg, rgba(26,103,200,1) 0%, rgba(179,53,155,1) 35%, rgba(255,68,0,1) 100%);
     transition: background 0.3s ease;
 }

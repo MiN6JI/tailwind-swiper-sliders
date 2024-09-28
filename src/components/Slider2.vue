@@ -4,7 +4,6 @@
       <swiper
         :modules="[Pagination]"
         :space-between="30"
-        :pagination="{ clickable: true }"
         :breakpoints="{
           640: {
             slidesPerView: 1,
@@ -19,27 +18,60 @@
         class="swiper"
       >
         <swiper-slide>
-          <Testimonial />
+          <Testimonial
+            name="John Doe"
+            profession="Software Engineer"
+            image="https://picsum.photos/200/200?random=3.jpg"
+            title="Climate Standard"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, tenetur?"
+          />
         </swiper-slide>
         <swiper-slide>
-          <Testimonial />
+          <Testimonial
+            name="Jane Smith"
+            profession="Marketing Specialist"
+            image="https://picsum.photos/200/200?random=4.jpg"
+            title="Amazing Service"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, assumenda?"
+          />
         </swiper-slide>
         <swiper-slide>
-          <Testimonial />
+          <Testimonial
+            name="Michael Johnson"
+            profession="Graphic Designer"
+            image="https://picsum.photos/200/200?random=5.jpg"
+            title="Highly Recommended"
+            description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+          />
         </swiper-slide>
         <swiper-slide>
-          <Testimonial />
+          <Testimonial
+            name="Emily Davis"
+            profession="Project Manager"
+            image="https://picsum.photos/200/200?random=6.jpg"
+            title="Professional Support"
+            description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+          />
         </swiper-slide>
         <swiper-slide>
-          <Testimonial />
+          <Testimonial
+            name="David Wilson"
+            profession="Content Writer"
+            image="https://picsum.photos/200/200?random=7.jpg"
+            title="Exceptional Quality"
+            description="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur."
+          />
         </swiper-slide>
         <swiper-slide>
-          <Testimonial />
+          <Testimonial
+            name="Sophia Martinez"
+            profession="Web Developer"
+            image="https://picsum.photos/200/200?random=8.jpg"
+            title="Great Experience"
+            description="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit."
+          />
         </swiper-slide>
-        <swiper-slide>
-          <Testimonial />
-        </swiper-slide>
-        </swiper>
+      </swiper>
     </div>
   </section>
 </template>
