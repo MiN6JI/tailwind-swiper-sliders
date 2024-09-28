@@ -36,7 +36,7 @@ function getCardClasses() {
 }
 </script>
 
-<style>
+<style scoped>
 .card {
     min-height: 100vh;
     background: linear-gradient(90deg, rgba(26,103,200,1) 0%, rgba(179,53,155,1) 35%, rgba(255,68,0,1) 100%);
