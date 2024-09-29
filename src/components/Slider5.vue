@@ -11,7 +11,6 @@
         </button>
       </div>
 
-      <!-- Swiper Section -->
       <div class="w-full md:w-1/2">
         <swiper
           :modules="[Pagination]"

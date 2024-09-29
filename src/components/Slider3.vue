@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="p-4 md:p-8 lg:p-16 bg-indigo  -100">
+    <div class="p-4 md:p-8 lg:p-16 bg-indigo-100">
       <swiper :pagination="true" :modules="modules" class="mySwiper">
         <swiper-slide>
           <New
