@@ -19,6 +19,10 @@
   <Layout11 />
   <Layout12 />
   <Layout13 />
+  <Layout14 />
+  <Layout15 />
+  <Layout16 />
+  <Layout17 />
 </template>
 <script setup>
 import Slider1 from './components/Slider1.vue'
@@ -41,4 +45,8 @@ import Layout11 from './components/layout11.vue'
 import Slider7 from './components/Slider7.vue'
 import Layout12 from './components/layout12.vue'
 import Layout13 from './components/layout13.vue'
+import Layout14 from './components/layout14.vue'
+import Layout15 from './components/layout15.vue'
+import Layout16 from './components/layout16.vue'
+import Layout17 from './components/layout17.vue'
 </script>

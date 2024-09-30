@@ -1,51 +1,49 @@
 <template>
-  <div class="p-2">
-    <div>
-      <img
-        src="https://picsum.photos/seed/picsum/1200/1200?random=2.jpg"
-        alt="placeholder-img"
-        width="100%"
-        height="200px"
-      />
+  <div class="w-full h-full p-2 flex flex-col justify-start items-start space-y-4">
+    <div class="w-full rounded-md overflow-hidden">
+      <img class="blog-img" :src="blogImg" alt="blog-img">
     </div>
-    <div class="w-full text-center md:text-left p-4">
-      <h4 class="py-2 text-lg md:text-xl font-bold text-gray-800 capitalize">
-        A digital Marketing Stats We have seen this week
-      </h4>
-      <p class="text-sm md:text-base text-gray-500">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-        praesentium eius officiis, voluptate cum, ut atque beatae sunt, odio
-        neque rerum soluta? Incidunt nostrum, facilis voluptatibus doloribus vel
-        officiis possimus.
-      </p>
-
-      <!-- Inner Section -->
-      <div
-        class="flex flex-col md:flex-row items-center md:items-start py-4 space-y-4 md:space-y-0 md:space-x-6"
-      >
-        <!-- Profile Image Section -->
-        <div class="flex justify-center items-center">
-          <img
-            class="w-10 h-10 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full"
-            src="https://picsum.photos/seed/picsum/200/200?random=2.jpg"
-            alt="random-img"
-          />
-        </div>
-
-        <!-- Profile Text Section -->
-        <div class="text-center md:text-left">
-          <h4 class="text-base md:text-lg font-bold text-gray-500">John Doe</h4>
-          <p class="text-gray-500 text-sm">22 Jan 2024, 15min</p>
+    <div class="px-4">
+      <div class="block py-2 px-6 rounded-lg text-sm capitalize bg-indigo-100 text-indigo-600 font-bold">
+      {{ chip }}
+    </div>
+    </div>
+    <div class="w-full px-4 pb-6 text-left flex flex-col space-y-4">
+      <div class="text-xl capitalise font-bold text-gray-700">{{ title }}</div>
+      <p class="text-gray-500 text-sm">{{ description }}</p>
+      <div class="flex flex-row space-x-4 py-2">
+        <img class="rounded-full" :src="profile" alt="profile-img" width="40px" height="40" >
+        <div>
+          <div class="text-sm font-bold">{{ name }}</div>
+          <div class="text-xs text-gray-500">{{ day }}</div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<script>
-export default {};
+
+<script setup>
+import Profile from './profile.vue';
+
+defineProps({
+  blogImg: String,
+  chip: String,
+  title: String,
+  description: String,
+  profile: String,
+  name: String,
+  day: String
+});
 </script>
+
 <style scoped>
-img{
-    border-radius: 10px;
+.blog-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
+
+/* .chip{
+  max-width: 150px;
+} */
 </style>
